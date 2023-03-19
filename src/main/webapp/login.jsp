@@ -147,6 +147,14 @@
     <div class="form-bottom">
         <form role="form" action="login" method="post" class="login-form">
             <div class="form-group col-xs-12">
+                用户选择：
+                <select name="accounttype">
+                    <option>患者</option>
+                    <option>医生</option>
+                    <option>管理员</option>
+                </select>
+            </div>
+            <div class="form-group col-xs-12">
                 <label class="sr-only" ></label>账号(*):<input
                     style="font-weight: bold" type="text" name="account"
                     class="form-control input-control clearfix"
@@ -157,7 +165,6 @@
                     style="font-weight: bold" type="password" name="password"
                     class="form-password form-control" wid="pwd1" required />
             </div>
-            <input hidden value="患者" name="accounttype">
             <div class="form-group col-xs-12">
                 <button type="submit" class="btn" wid="btn">立即登录</button>
             </div>
