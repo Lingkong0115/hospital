@@ -148,11 +148,9 @@
         <form role="form" action="login" method="post" class="login-form">
             <div class="form-group col-xs-12">
                 用户选择：
-                <select name="accounttype">
-                    <option>患者</option>
-                    <option>医生</option>
-                    <option>管理员</option>
-                </select>
+                <input type="radio" name="accounttype" value="患者" checked="checked">患者
+                <input type="radio" name="accounttype" value="医生">医生
+                <input type="radio" name="accounttype" value="管理员">管理员
             </div>
             <div class="form-group col-xs-12">
                 <label class="sr-only" ></label>账号(*):<input
